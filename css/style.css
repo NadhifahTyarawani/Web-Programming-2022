@@ -1,0 +1,189 @@
+/* 
+ * define style
+ * dev dhifahtyara
+ * responsive design
+ * start dimension : 768px
+ */
+/*==EXTERNAL FONT==*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Poppins', sans-serif;
+}
+a { text-decoration: none; }
+li { list-style: none; }
+.contain {
+    padding: 10px;
+    width: 1120px;
+    margin: 0 auto;
+}
+.contain-area {
+    /* border: 1px solid #b9b4b4; */
+    box-shadow: 1px 1px 10px -4px #4c4c4c;
+    padding: 30px 15px;
+    position: relative;
+}
+
+.title-contain {
+    position: absolute;
+    top: -13px;
+    left: 15px;
+    background: #fff;
+    padding: 0 10px;
+}
+.header-area {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+.header-area .visual-profile {
+    display: block;
+    align-self: center;
+    width: 25%;
+}
+.header-area .visual-profile img.img-proto {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.desc-profile {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    padding: 0 15px;
+}
+.desc-profile .dt-left {
+    width: 70%;
+}
+.desc-profile .dt-right {
+    text-align: right;
+    width: 30%;
+    padding: 10px 0;
+}
+
+/* dt left*/
+.dt-left h5.title-parent {
+    font-size: 2rem;
+}
+/* def row */
+.dt-left .desc-tp {
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+/* def title */
+.dt-left .desc-tp .dstq {
+    font-weight: bolder;
+    width: 35%;
+}
+/* def value */
+.dt-left .desc-tp .dvalue {
+    width: 65%;
+}
+
+/* dt Rigt*/
+.desc-profile .dt-right ul li  {
+    color: #1dab9f;
+}
+
+
+/* section-area */
+
+.section-area {
+    margin-bottom: 4rem;
+}
+.section-area p {
+    margin-bottom: 1rem;
+}
+
+/* footer-area */
+.footer-area .foot-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.footer-area .foot-flex .fbox{
+    border:1px solid #b9b4b4;
+    /* height: 200px; */
+    width: 30%;
+    margin: 0 15px;
+}
+.item-img,
+.f-attach {
+    padding: 1rem;
+}
+.foot-flex .f-attach {
+    position: relative;
+}
+.title-attach {
+    position: absolute;
+    top: -13px;
+    left: 15px;
+    background-color: #fff;
+    padding: 0 10px;
+}
+/* video */
+.vid-content video {
+    padding: .567rem;
+    width: 100%;
+    height: auto;
+}
+/* item */
+.item-img .img-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.item-img .img-content .item-f {
+    width: 50%;
+    padding: 5px;
+}
+.item-img .img-content .item-f img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media screen and (max-width:768px) {
+    .contain {
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .contain-area {
+        padding: 20px 15px;
+    }
+    .header-area .visual-profile {
+        align-self: flex-start;
+        padding-top: 15px;
+    }
+    .dt-left h5.title-parent {
+        font-size: 1.62rem;
+    }
+    .dt-left .desc-tp {
+        font-size: 13px;
+    }
+    .desc-profile .dt-right {
+        font-size: 13px;
+    }
+    .section-area p {
+        font-size: 13px;
+    }
+    .footer-area .foot-flex {
+        flex-direction: column;
+    }
+    .footer-area .foot-flex .fbox {
+        width: 70%;
+        align-self: center;
+        margin: 10px 15px;
+    }
+    .section-area {
+        margin-bottom: 1rem;
+    }
+}
