@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body style="background-color: brown;">
+    <select id="dropdown" onchange="cetakGambar()">
+        <option value=" IT ">Teknologi 1</option>
+        <option value="Basic IT">Teknologi 2</option>
+        <option value="IT Laptop">Teknologi 3</option>
+        <option value="Ketik IT">Teknologi 4</option>
+        <option value="Laptop IT">Teknologi 5</option>
+        <option value="Laptop">Teknologi 6</option>
+    </select>
+    <br>
+    <img id="image" style="width: 25%;">
+
+
+    <script>
+        const cetakGambar = () => {
+        const dropdown = document.getElementById("dropdown");
+        const image = document.getElementById('image');
+
+        if(dropdown.value === 'IT') {
+            image.setAttribute('src', 'images/satu.jpg');
+            alert('Teknologi 1');
+        } else if (dropdown.value === 'Basic IT') {
+            image.setAttribute('src', 'images/dua.jpg');
+            alert('Teknologi 2');
+        } else if (dropdown.value === 'IT Laptop') {
+            image.setAttribute('src', 'images/tiga.jpg');
+            alert('Teknologi 3');
+        } else if (dropdown.value === 'Ketik IT') {
+            image.setAttribute('src', 'images/empat.jpg');
+            alert('Teknologi 4');
+        } else if (dropdown.value === 'Laptop IT') {
+            image.setAttribute('src', 'images/lima.jpg');
+            alert('Teknologi 5');
+        } else if (dropdown.value === 'Laptop') {
+            image.setAttribute('src', 'images/enam.jpg');
+            alert('Teknologi 6');
+        }
+    }
+    </script>
+</body>
+</html>
